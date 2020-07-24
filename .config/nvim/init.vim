@@ -7,7 +7,7 @@ let mapleader = "\<Space>"
 " Load vundle
 set nocompatible
 filetype off
-set rtp+=~/dev/others/base16/templates/vim/
+"set rtp+=~/.config/base16-shell/templates/vim/
 call plug#begin()
 
 " Load plugins
@@ -59,7 +59,7 @@ endif
 
 set background=dark
 let base16colorspace=256
-let g:base16_shell_path="~/dev/others/base16/templates/shell/scripts/"
+let g:base16_shell_path="~/.config/base16-shell/templates/shell/scripts/"
 colorscheme base16-gruvbox-dark-hard
 hi Normal ctermbg=NONE
 
@@ -158,9 +158,9 @@ set wildmode=list:longest
 set wildignore=.hg,.svn,*~,*.png,*.jpg,*.gif,*.settings,Thumbs.db,*.min.js,*.swp,publish/*,intermediate/*,*.o,*.hi,Zend,vendor
 
 " Use wide tabs
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=8
+set softtabstop=8
+set tabstop=8
 set noexpandtab
 set backspace=2
 
@@ -211,7 +211,7 @@ nnoremap <leader><leader> <c-^>
 " <leader>, shows/hides hidden characters
 nnoremap <leader>, :set invlist<cr>
 
-" <leader>s for Rg search
+" <leader>s for Rg search cargo dependencies: ripgrep, fd-find, proximity-sort
 noremap <leader>s :Rg
 let g:fzf_layout = { 'down': '~20%' }
 command! -bang -nargs=* Rg
