@@ -127,3 +127,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 alias config='/usr/bin/git --git-dir=/home/ido/.cfg/ --work-tree=/home/ido'
+
+[[ -s /home/ido/.autojump/etc/profile.d/autojump.sh ]] && source /home/ido/.autojump/etc/profile.d/autojump.sh

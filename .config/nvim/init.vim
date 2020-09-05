@@ -158,9 +158,9 @@ set wildmode=list:longest
 set wildignore=.hg,.svn,*~,*.png,*.jpg,*.gif,*.settings,Thumbs.db,*.min.js,*.swp,publish/*,intermediate/*,*.o,*.hi,Zend,vendor
 
 " Use wide tabs
-set shiftwidth=8
-set softtabstop=8
-set tabstop=8
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set noexpandtab
 set backspace=2
 
@@ -204,6 +204,12 @@ nnoremap <right> :bn<CR>
 " Move by line
 nnoremap j gj
 nnoremap k gk
+
+" remmap moving windows
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " <leader><leader> toggles between buffers
 nnoremap <leader><leader> <c-^>
@@ -341,6 +347,7 @@ command! -bang -nargs=? -complete=dir Files
 
 " Follow Rust code style rules
 au Filetype rust source ~/.config/nvim/scripts/spacetab.vim
+au Filetype c source ~/.config/nvim/scripts/spacetab.vim
 au Filetype rust set colorcolumn=100
 
 
