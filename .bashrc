@@ -86,7 +86,6 @@ fi
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-eval $(dircolors ~/.dir_colors)
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -130,6 +129,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 alias config='/usr/bin/git --git-dir=/home/ido/.cfg/ --work-tree=/home/ido'
 
-[[ -s /home/ido/.autojump/etc/profile.d/autojump.sh ]] && source /home/ido/.autojump/etc/profile.d/autojump.sh
+#if the file doesnt exists, copy from /usr/share/autojump/autojump.sh
+[[ -s /home/ido/.autojump/etc/profile.d/autojump.sh ]] && source /home/ido/.autojump/etc/profile.d/autojump.sh 
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
