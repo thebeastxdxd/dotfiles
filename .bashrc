@@ -130,3 +130,5 @@ export NVM_DIR="$HOME/.nvm"
 alias config='/usr/bin/git --git-dir=/home/ido/.cfg/ --work-tree=/home/ido'
 
 [[ -s /home/ido/.autojump/etc/profile.d/autojump.sh ]] && source /home/ido/.autojump/etc/profile.d/autojump.sh
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
