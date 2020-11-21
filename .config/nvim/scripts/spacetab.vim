@@ -4,4 +4,4 @@ set softtabstop=4
 set tabstop=4
 set expandtab
 
-set foldmethod=syntax
+"set foldmethod=syntax
