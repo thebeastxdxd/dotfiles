@@ -8,6 +8,7 @@ let mapleader = "\<Space>"
 set nocompatible
 filetype off
 "set rtp+=~/.config/base16-shell/templates/vim/
+set rtp+=/~/.config/nvim
 call plug#begin()
 
 " Load plugins
@@ -16,6 +17,7 @@ Plug 'ciaranm/securemodelines'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'justinmk/vim-sneak'
 Plug 'christianfosli/wsl-copy'
+Plug 'tpope/vim-surround'
 
 
 " GUI enhancements
@@ -349,5 +351,3 @@ command! -bang -nargs=? -complete=dir Files
 au Filetype rust source ~/.config/nvim/scripts/spacetab.vim
 au Filetype c source ~/.config/nvim/scripts/spacetab.vim
 au Filetype rust set colorcolumn=100
-
-
