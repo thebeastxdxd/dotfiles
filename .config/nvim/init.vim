@@ -310,7 +310,7 @@ xmap <silent> <TAB> <Plug>(coc-range-select)
 nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
 
 " Search workspace symbols.
-nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+nnoremap <silent> <space>sy  :<C-u>CocList -I symbols<cr>
 
 " Implement methods for trait
 nnoremap <silent> <space>i  :call CocActionAsync('codeAction', '', 'Implement missing members')<cr>
@@ -319,8 +319,6 @@ nnoremap <silent> <space>i  :call CocActionAsync('codeAction', '', 'Implement mi
 nnoremap <silent> <space>a  :CocAction<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
 
 " <leader>s for Rg search
 noremap <leader>s :Rg
